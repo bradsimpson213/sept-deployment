@@ -18,6 +18,7 @@ def seed():
         # Make sure to add all your other model's undo functions below
         undo_users()
     seed_users()
+    print("Seeded successfully!")
     # Add other seed functions here
 
 
@@ -25,4 +26,5 @@ def seed():
 @seed_commands.command('undo')
 def undo():
     undo_users()
+    print("Seed data removed!")
     # Add other undo functions here
